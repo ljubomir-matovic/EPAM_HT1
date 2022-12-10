@@ -1,0 +1,10 @@
+header{
+    justify-content: space-between;
+    border: 1px solid red;
+    padding: 10px 20px;
+    width: 90%;
+}
+
+header > :nth-child(2){
+    gap:30px;
+}

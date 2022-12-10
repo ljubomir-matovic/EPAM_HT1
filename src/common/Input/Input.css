@@ -1,0 +1,6 @@
+input{
+    border: 2px solid rgb(224, 211, 19);
+    outline: none;
+    padding: 7px 14px;
+    width: max(40%,250px);
+}

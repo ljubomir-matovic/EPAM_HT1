@@ -1,0 +1,7 @@
+.default-button{
+    padding: 7px 14px;
+    outline: none;
+    border: 1px solid purple;
+    background-color: white;
+    cursor: pointer;
+}
