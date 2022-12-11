@@ -4,7 +4,7 @@ export default function Input({
 	className,
 	placeholder,
 	onChange,
-	ref,
+	inputRef,
 	type,
 	style,
 }) {
@@ -13,7 +13,7 @@ export default function Input({
 			type={type === undefined ? 'text' : type}
 			onChange={onChange}
 			placeholder={placeholder}
-			ref={ref}
+			ref={inputRef}
 			className={className === undefined ? 'default-input' : className}
 			style={style}
 		/>
