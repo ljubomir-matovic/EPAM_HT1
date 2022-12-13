@@ -13,7 +13,6 @@ export default function useLocalStorage(key, defaultValue = null) {
 		}
 	}
 	const [state, setState] = useState(initialValue);
-	const append = (item) => setState((previous) => [...previous, item]);
 	useEffect(() => {
 		try {
 			localStorage.setItem(key, JSON.stringify(state));
@@ -22,5 +21,5 @@ export default function useLocalStorage(key, defaultValue = null) {
 			localStorage.removeItem(key);
 		}
 	}, [state, key]);
-	return { state, setState, append };
+	return { state, setState };
 }

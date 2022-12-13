@@ -1,19 +1,14 @@
 import React, { useCallback, useContext, useMemo, useState } from 'react';
 import Button from '../../common/Button/Buton';
-import {
-	ADD_NEW_COURSE_BUTTON_TEXT,
-	COURSES,
-	mockedCoursesList,
-} from '../../constants';
-import { CreateCourseContext } from '../../context';
-import useLocalStorage from '../../hooks/useLocalStorage';
+import { ADD_NEW_COURSE_BUTTON_TEXT } from '../../constants';
+import { CoursesContext, CreateCourseContext } from '../../context';
 import CourseCard from './components/CourseCard/CourseCard';
 import SearchBar from './components/SearchBar/SearchBar';
 import './Courses.css';
 export default function Courses() {
 	const { setCreateCourse } = useContext(CreateCourseContext);
-	const { state: courses } = useLocalStorage(COURSES, mockedCoursesList);
 	const [pattern, setPattern] = useState('');
+	const { courses } = useContext(CoursesContext);
 	const filteredCourses = useMemo(
 		() =>
 			courses?.filter(

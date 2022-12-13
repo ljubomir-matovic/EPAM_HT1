@@ -7,6 +7,8 @@ export default function Input({
 	inputRef,
 	type,
 	style,
+	name,
+	required,
 }) {
 	return (
 		<input
@@ -16,6 +18,8 @@ export default function Input({
 			ref={inputRef}
 			className={className === undefined ? 'default-input' : className}
 			style={style}
+			name={name}
+			required={required || false}
 		/>
 	);
 }
