@@ -1,0 +1,11 @@
+.authors-container{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.authors{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    gap:10px 20px;
+}

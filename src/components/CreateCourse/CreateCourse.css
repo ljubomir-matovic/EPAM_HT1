@@ -1,0 +1,49 @@
+.create-course > .header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.create-course > .header > div:nth-child(2){
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.authors-and-duration{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+
+    border: 1px solid black;
+    padding: 20px;
+}
+form.create-author{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+}
+form.create-author > *{
+    width: 100%;
+}
+form.create-author > div:nth-child(2) > :first-child{
+    width: 95%;
+}
+
+.input{
+    width: 90%;
+}
+
+.duration{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.duration > h1{
+    text-align: center;
+}
+
+.duration > :nth-child(3){
+    font-size: 30px;
+}

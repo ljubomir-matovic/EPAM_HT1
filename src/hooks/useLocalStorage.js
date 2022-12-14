@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+// when state is changed, save it in localstorage
 export default function useLocalStorage(key, defaultValue = null) {
 	let initialValue;
 	let item = localStorage.getItem(key);

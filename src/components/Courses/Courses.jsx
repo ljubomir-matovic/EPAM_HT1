@@ -26,7 +26,7 @@ export default function Courses() {
 		<main>
 			<div className='header'>
 				<SearchBar setPattern={setPattern} onChange={onChangeInput} />
-				<div>
+				<div className='button-container'>
 					<Button
 						text={ADD_NEW_COURSE_BUTTON_TEXT}
 						onClick={() => setCreateCourse(true)}

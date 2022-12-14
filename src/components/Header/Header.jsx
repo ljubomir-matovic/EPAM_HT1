@@ -3,14 +3,17 @@ import Button from '../../common/Button/Buton';
 import { LOGOUT_BUTTON_TEXT } from '../../constants';
 import Logo from './components/Logo';
 import './Header.css';
-export default function Header({ borderColor, className }) {
+export default function Header({
+	borderColor = 'red',
+	className = 'center-y',
+}) {
 	return (
 		<>
 			<header
 				style={{
-					borderColor: borderColor !== undefined ? borderColor : 'red',
+					borderColor: borderColor,
 				}}
-				className={className === undefined ? 'center-y' : className}
+				className={className}
 			>
 				<div>
 					<Logo />

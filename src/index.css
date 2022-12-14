@@ -6,8 +6,8 @@
 
 #root{
 	padding-top: 20px;
-	width: 100vw;
 	min-height: 100vh;
+	padding-bottom: 20px;
 }
 
 .absolute-center{

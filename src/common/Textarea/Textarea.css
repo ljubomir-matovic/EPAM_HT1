@@ -1,0 +1,6 @@
+.default-textarea{
+    outline: none;
+    border: 2px solid rgb(224, 211, 19);
+	padding: 10px;
+    min-height: 100px;
+}

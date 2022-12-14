@@ -1,4 +1,4 @@
-.authors{
+.authors-text{
     white-space: nowrap; 
     overflow: hidden; 
     text-overflow: ellipsis;
@@ -13,6 +13,9 @@
     display: flex;
     flex-direction: column;
     gap:5px;
+}
+.course-card > .column:first-child{
+    flex:1;
 }
 .course-card > .column:nth-child(2){
     min-width: 25%;

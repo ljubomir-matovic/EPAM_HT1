@@ -23,7 +23,7 @@ export default function CourseCard({ course }) {
 					<div>{course.description}</div>
 				</div>
 				<div className='column'>
-					<div className='authors'>
+					<div className='authors-text'>
 						<b>Authors:&nbsp;</b>
 						{courseAuthors}
 					</div>
