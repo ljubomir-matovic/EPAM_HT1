@@ -3,3 +3,20 @@
     overflow: hidden; 
     text-overflow: ellipsis;
 }
+.course-card{
+    display: flex;
+    gap:30px;
+    border: 1px solid green;
+    padding: 10px;
+}
+.course-card > .column{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+.course-card > .column:nth-child(2){
+    min-width: 25%;
+}
+.show-button{
+    align-self: center;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import Courses from './components/Courses/Courses';
 import CreateCourse from './components/CreateCourse/CreateCourse';
@@ -21,6 +21,9 @@ function App() {
 		AUTHORS,
 		mockedAuthorsList
 	);
+	useEffect(() => {
+		document.title = 'Courses';
+	}, []);
 	return (
 		<CreateCourseContext.Provider value={{ setCreateCourse }}>
 			<CoursesContext.Provider value={{ courses, setCourses }}>
